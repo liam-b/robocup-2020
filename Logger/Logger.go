@@ -1,7 +1,5 @@
 package Logger
 
-import "fmt"
-
 const (
 	End       = 1 << 0
 	Bold      = 1 << 1
