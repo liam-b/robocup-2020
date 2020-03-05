@@ -1,7 +1,5 @@
 package Logger
 
-import ()
-
 const (
 	End       = 1 << 0
 	Bold      = 1 << 1
@@ -30,7 +28,7 @@ var mods [12]string = [12]string{
 	"\x1b[37m",
 }
 
-func colourString(input string, formats int) string {
+func ColourString(input string, formats int) string {
 	var final string = ""
 	for i := 0; i < 11; i++ {
 		if formats&(1<<i) != 0 {
