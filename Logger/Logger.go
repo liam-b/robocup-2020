@@ -1,5 +1,7 @@
 package Logger
 
+import ()
+
 const (
 	End       = 1 << 0
 	Bold      = 1 << 1
